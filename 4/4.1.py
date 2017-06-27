@@ -1,13 +1,13 @@
 #!/usr/bin/python
 
 
-print "hellow world"
+print "hellow world","\n"
 
 n = 8
 
 my_list=[10,20,3,20,10,30,4,50]
-
-print my_list
+print "Before"
+print my_list,"\n"
 
 i=j=k=0
 
@@ -33,5 +33,6 @@ while(i < n ):
  i=i+1
 
 
-print my_list
+print "Before"
+print my_list,"\n"
 
