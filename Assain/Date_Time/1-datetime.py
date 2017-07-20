@@ -3,6 +3,11 @@ import time;  # This is required to include time module.
 import calendar
 import datetime
 
+Date_Time=datetime.datetime.now()
+          #datetime.datetime.now()
+
+#print"Date_Time",Date_Time
+exit(1)
 ticks = time.time()
 print "Number of ticks since 12:00am, January 1, 1970:", ticks
 
