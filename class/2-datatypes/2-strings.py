@@ -10,9 +10,9 @@ exit(1)
 print ("")
 print (len(test_str))
 
-
+"""
 test_str = "Aura Networks Bangalore"
-
+"""
 
  String is immutable 
 print test_str[2]
@@ -32,11 +32,21 @@ print("revere",reversed(test_str))
 
 exit(1)
 print ("")
-
+"""
+#print ("len ",len(test_str))
+"""
 print (test_str[0])
 print (test_str[1])
-print (test_str[-1])
+"""
+print test_str[-1]
+print test_str[-5:-1]
+#print test_str[-4:-1]
+#print (test_str[:])
+#print (test_str[::-1])
+
+"""
 print (test_str[-2])
+
 print (test_str[1:6])
 print (test_str[1:23])
 print (test_str[1:30])
@@ -243,7 +253,7 @@ print (str.strip())
 print ("")
 
 exit(1)
-"""
+
 
 #str = "88888888this is string example....wow!!!8888888888888888888888";
 #print (str)
@@ -321,7 +331,6 @@ print (username)
 print (dname)
 exit(1)
 
-"""
 
 print ("")
 str = ("Line1-a b c d e f\nLine2- a b c\n\nLine4- a b c d";
