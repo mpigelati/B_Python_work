@@ -1,3 +1,4 @@
+# Thiis is a simple android module for connecting remote PC
 import telnetlib
 
 HOST = "localhost"
