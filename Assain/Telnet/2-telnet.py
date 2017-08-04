@@ -7,7 +7,7 @@ password = "jnjnuh"
 
 fd = open(sys.argv[1], "r")
 list_of_servers = fd.readlines()
-print list_of_servers
+print (list_of_servers)
 fd.close()
 
 for server in list_of_servers:
@@ -15,12 +15,12 @@ for server in list_of_servers:
     tn = telnetlib.Telnet(server)
 
     tn.read_until("login: ")
-    print "Received login"
+    print ("Received login")
 
     tn.write(user + "\n")
 
     tn.read_until("Password: ")
-    print "Received Password"
+    print ("Received Password")
 
     if password:
         tn.write(password + "\n")
@@ -29,16 +29,16 @@ for server in list_of_servers:
 
     tn.write("ls -l\n")
     data =  tn.read_eager()
-    print data
+    print (data)
 
     tn.read_until("total ")
-    print "Got total"
+    print ("Got total")
     tn.write("cat t.txt\n")
     tn.write("exit\n")
-    print "=============="
+    print ("==============")
     data =  tn.read_all()
-    print data
-    print "=============="
+    print (data)
+    print ("==============")
 
 
 '''
