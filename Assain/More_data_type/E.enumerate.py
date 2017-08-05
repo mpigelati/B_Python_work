@@ -7,16 +7,16 @@ print(list(enumerateprog_lagn))
 enumerateprog_lagn = enumerate(prog_lagn, 10)
 print(list(enumerateprog_lagn))
 
-print ""
+print ("")
 prog_lagn = ['Python', 'C-Lang', 'Java']
 for item in enumerate(prog_lagn):
   print(item)
 
-print ""
+print ("")
 for i, temp in enumerate(prog_lagn):
   print(i, temp)
 
-print ""
+print ("")
 # changing default start value
 for i, item in enumerate(prog_lagn, 100):
   print(i, item)
