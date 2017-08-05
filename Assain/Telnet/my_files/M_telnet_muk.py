@@ -1,11 +1,7 @@
 from telnetlib import Telnet
 from sys import argv
 
-
-
 def Fun_to_open_file(filename,mode):
-    #print("you are in functionmode ")
-    #print(("filename",filename))
     try:
         fd= open(filename,mode)
     except:
@@ -13,18 +9,19 @@ def Fun_to_open_file(filename,mode):
     else:
         return fd
 
-
 fd = Fun_to_open_file(argv[1],"r")
 data = fd.readlines()
 #print("data",data)
 date=[]
 for line in data:
-    #print ("hellow")
     if ("userip" in line) | ("username" in line )|("password" in line):
-        print(line)
-        user = line.split(':')[0].lstrip("\t")
-        print("user",user)
-        print("\n\n")
+        #print(line)
+        value = "".join(line.split(":")[0])
+        keys = "".join(line.split(":")[1])
+        print("user:- %s:-, key:- %s" % (value, ))
+        temp = value.strip("\t").strip(' /"')
+        temp1 = keys.strip("\t").strip(' /"')
+        print("user:- %s:-, key:- %s" % (temp,temp1))
 
 Host="localhost"
 user= "lekshana"

@@ -12,8 +12,10 @@ fd.close()
 
 for server in list_of_servers:
     server = server.rstrip('\n')
-    tn = telnetlib.Telnet(server)
+    print("server",server)
+#tn = telnetlib.Telnet(server)
 
+'''
     tn.read_until("login: ")
     print ("Received login")
 
@@ -41,7 +43,7 @@ for server in list_of_servers:
     print ("==============")
 
 
-'''
+
 for server in list_of_servers:
     server = server.rstrip('\n')
     print "server :%s, username :%s, pass :%s" % (server, user, password)

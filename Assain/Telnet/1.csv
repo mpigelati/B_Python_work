@@ -7,16 +7,16 @@
  {
    "system_ip": "localhost",
    "username": "bhagavan",
-   "password": "jnjnuh"
+   "password": "jnjnuhuh"
  },
  {
-   "system_ip": "192.168.1.1",
-   "username": "bhagavan",
-   "password": "jnjnuh"
+   "system_ip": "localhost",
+   "username": "sakethram",
+   "password": "jnjnuhuh"
  },
  {
-   "system_ip": "127.0.0.1",
-   "username": "bhagavan",
-   "password": "jnjnuh"
+   "system_ip": "localhost",
+   "username": "manju",
+   "password": "jnjnuhuh"
  }
 ]
