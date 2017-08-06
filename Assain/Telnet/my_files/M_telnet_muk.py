@@ -14,14 +14,16 @@ data = fd.readlines()
 #print("data",data)
 date=[]
 for line in data:
-    if ("userip" in line) | ("username" in line )|("password" in line):
+    if ("Host" in line) | ("user" in line )|("password" in line):
         #print(line)
         value = "".join(line.split(":")[0])
         keys = "".join(line.split(":")[1])
-        print("user:- %s:-, key:- %s" % (value, ))
+        #print("user:- %s:-, key:- %s" % (value, keys))
         temp = value.strip("\t").strip(' /"')
-        temp1 = keys.strip("\t").strip(' /"')
-        print("user:- %s:-, key:- %s" % (temp,temp1))
+        temp1 = keys.strip("\t").strip(' /"').rstrip("\n").rstrip("\" ")
+        #temp3="".join(temp+temp1)
+        print(temp,temp1)
+        #print(temp3)
 
 Host="localhost"
 user= "lekshana"

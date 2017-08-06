@@ -1,22 +1,22 @@
 Datebase = [
             {
-             "userip"   :"localhost"
-			 "username" :"mohansai"
+             "Host"   :"localhost"
+			 "user" :"mohansai"
 			 "password" :"jnjnuhuh"
 			},
 			{
-			 "userip"   :"localhost"
-			 "username" :"sakethram"
+			 "Host"   :"localhost"
+			 "user" :"sakethram"
 			 "password" :"jnjnuhuh"
             },
             {
-			 "userip"   :"localhost"
-			 "username" :"manju"
+			 "Host"   :"localhost"
+			 "user" :"manju"
 			 "password" :"jnjnuhuh"
             },
             {
-			 "userip"   :"localhost"
-			 "username" :"lekshana"
+			 "Host"   :"localhost"
+			 "user" :"lekshana"
 			 "password" :"jnjnuhuh"
             }
 		  ]
