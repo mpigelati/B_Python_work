@@ -5,6 +5,7 @@ import thread
 import os
 
 def Fun_Telnet (localhost,user,password):
+    print("you are in function Tenet")
     print(thread.get_ident())
     HOST = localhost.encode('ascii', 'ignore')
     user = user.encode('ascii', 'ignore')
