@@ -48,7 +48,7 @@ count=len(data)
 for i, line in enumerate(data):
     if ("Host" in line):
         ldata.append(Fun_linesplit(line))
-        for j in i+2,count:
+        for j in (i+2,count):
             print("line ",j)
         print(" ")
         print("list",ldata)
