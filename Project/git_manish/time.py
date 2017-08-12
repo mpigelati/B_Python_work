@@ -1,18 +1,21 @@
+import time
 from datetime import datetime
 
-#datetime_object = datetime.strptime('Jun 1 2005  1:33PM', '%b %d %Y %I:%M%p')
+temp_time = "Sat Aug 12 17:02:10 2017 +0530"
 
-#print(datetime_object)
 
-#temp_time= "Tue Aug 1 14:55:13 2017 +0530"
-#temp1 =temp_time.split("+")[0]
-#print(temp1)
+def M_time_convert(Time):
+    return datetime.strptime(Time, '%a %b %d %H:%M:%S %Y')
 
-temp_time1="Tue Aug 1 14:55:13 2017"
 
-#datetime_object = datetime.strptime('Jun 1 2005  1:33PM', '%b %d %Y %I:%M%p')
+def M_Time_diff(M_time):
 
-#                        temp_time1="Tue Aug 1 14:55:13 2017"
+    M_temp = M_time_convert(temp_time.split("+")[0].rstrip(" "))
+    print(M_temp)
+    M_temp1 = M_time_convert(time.ctime(time.time()))
+    print(M_temp1)
+    diff = M_temp - M_temp1
+    print("diff", diff)
 
-datetime_object = datetime.strptime('Tue Aug 1 14:55:13 2017','%a %b %d %H:%M:%S %Y')
-print(datetime_object)
+
+diff = M_Time_diff(temp_time)

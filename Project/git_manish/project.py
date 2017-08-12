@@ -1,35 +1,51 @@
-import time
-#import datetime
-from datetime import datetime
-print("this is sample python")
+import json
+import subprocess
 
-temp_time= "Tue Aug 1 14:55:13 2017 +0530"
+gitlog= "git log > git_log.txt"
+subprocess.call(gitlog,shell=True)
+#with open('data.json','r') as js:
+ #   print(js)
 
-tick=time.time()
-#print(tick)
-#temp  = time.ctime(time.time())
-#print("temp",temp)
-#print("temp",temp1)
-#T_diff= temp- temp1
-#print(time.ctime(time.time()))
+my_json={}
+my_json=[]
 
-def M_time_convert(Time):
-    return datetime.strptime(Time, '%a %b %d %H:%M:%S %Y')
-    #print("M_time", datetime_object)
+def Fun_json_print():
+    with open("data.json","r") as pd:
+        data = json.load(pd)
+        print(data)
+    #for line in data:
+    #  print(line["commit"])
 
-
-def M_date_Time_convert(M_time):
-
-    temp1 = temp_time.split("+")[0].rstrip(" ")
-    #print(temp1)
-    M_temp=M_time_convert(temp1)
-    print(M_temp)
-    #print(type(M_temp))
-    # datetime_object = datetime.strptime('Tue Aug 1 14:55:13 2017', '%a %b %d %H:%M:%S %Y')
-    M_temp1 = M_time_convert(time.ctime(time.time()))
-    print(M_temp1)
-    #M_temp1 = M_time_convert(time.ctime(time.time()))
-
+def Fun_json(my_list):
+    #print("mylist",my_list)
+    #print("my_list_len",len(my_list))
+    my_json.append(
+            {
+                "commit":my_list[0].split[" "][1].rsplit("\n")
+                "Auther":my_list[1],
+                "Date" :my_list[2],
+                "Text":my_list[3].lstrip(" ")
+            })
+    with open("data.json", 'w')as fd:
+        #print(fd)
+        json.dump(data,fd)
 
 
-diff = M_date_Time_convert(temp_time)
+
+with open('git_log.txt','r') as fd:
+    print(fd)
+    data =fd.readlines()
+    size=len(data)-1
+    #print("size",size)
+    t_list=[]
+
+for i, line in enumerate(data):
+    if("commit" in line and size != i):
+        for j in range(i,i+5):
+            if(data[j] != "\n"):
+                t_list.append(data[j])
+        Fun_json(t_list)
+        #print(t_list)
+        t_list.clear()
+
+Fun_json_print()
