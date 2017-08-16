@@ -1,10 +1,7 @@
 import telnetlib
 import json
-import unicodedata
-#import thread
+import thread
 def Fun_Telnet(localhost,user,password):
-    #localhost= localhost.encode('ascii', 'ignore')
-    #print("type",type(localhost))
 
     HOST = localhost.encode('ascii', 'ignore')
     user = user.encode('ascii', 'ignore')
