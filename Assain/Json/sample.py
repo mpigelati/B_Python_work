@@ -84,7 +84,7 @@ data.append(
         }
     )
 with open("data.json","w") as fd:
-    json.dump(data,fd)
+    json.dump(data,fd,indent=2)
 
 with open("data.json","r") as fd:
     data = json.load(fd)

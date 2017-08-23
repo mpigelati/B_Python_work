@@ -1,1 +1,17 @@
-[{"commit": "mohan", "time": "12:25", "name": "Mohan"}, {"commit": "saketh", "time": "12:25", "name": "saketh"}, {"commit": "lekshana", "time": "12:25", "name": "lekshana"}]
+[
+  {
+    "time": "12:25",
+    "commit": "mohan",
+    "name": "Mohan"
+  },
+  {
+    "time": "12:25",
+    "commit": "saketh",
+    "name": "saketh"
+  },
+  {
+    "time": "12:25",
+    "commit": "lekshana",
+    "name": "lekshana"
+  }
+]
