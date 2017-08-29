@@ -1,7 +1,7 @@
 import re
 
 #"w" - Specifies charactar
-s1 = "We do     not   need   ACTS   but  Action"
+s1 = "We do     not   need   ACTS   but  Action We"
 s2 = "Once we decide we have to do something, we can go miles ahead"
 s3 = "We are not here for any positions but for a responsibility"
 s4 = "In  my life mission and passsion is everything.. Even if i was a municipal chairman, work as hard as a CM"
@@ -9,177 +9,190 @@ s5 = "This number  12345 contains  5 degits, 346 three,  86 two, and abcd 2345 x
 s6 = "My email ID is bhagavan@auranetworks.in and other enquiry@auranetworks.in my domain is auranetworks"
 s7 = 'email hrdeportment-s@auranetworks.in and other support@auranetworks.in are sits main cabin'
 
-regex = r'We \w\w'
-print "search -- '%s' -- '%s' " % (regex, s1)
+#regex = r'We \w\w'
+'''print ("search -- '%s' -- '%s' " % (regex, s1))
 match = re.search(regex, s1)
-if match:                      
-    print 'Found :', match.group()
+if match:
+    print ('Found :', match.group())
 else:
-    print 'Not Found'
-print ""
+    print ('Not Found')
+print ("")'''
 
-regex = r'we \w\w\w'
-print "search -- '%s' -- '%s' " % (regex, s2)
+'''
+regex = r'we \w\w\w\w'
+print ("search -- '%s' -- '%s' " % (regex, s2))
 match = re.search(regex, s2)
 if match:                      
-    print 'Found :', match.group()
+    print ('Found :', match.group())
 else:
-    print 'Not Found'
-print ""
+    print ('Not Found')
+print ("")'''
 
-regex = r'.re'
-print "search -- '%s' -- '%s' " % (regex, s3)
+'''regex = r'.re'
+print ("search -- '%s' -- '%s' " % (regex, s3))
 match = re.search(regex, s3)
 if match:                      
-    print 'Found :', match.group()
+    print ('Found :', match.group())
 else:
-    print 'Not Found'
-print ""
+    print ('Not Found')
+print ("")
+'''
 
-regex = r'.re'
-print "finditer -- '%s' -- '%s' " % (regex, s3)
+'''regex = r'.re'
+print ("finditer -- '%s' -- '%s' " % (regex, s3))
 for match in re.finditer(regex, s3):
-    print match.group()
-print ""
+    print (match.group())
 
-regex = r'..re'
-print "search -- '%s' -- '%s' " % (regex, s3)
+print ("")'''
+
+'''regex = r'..re'
+print ("search -- '%s' -- '%s' " % (regex, s3))
 match = re.search(regex, s3)
 if match:                      
-    print 'Found :', match.group()
+    print ('Found :', match.group())
 else:
-    print 'Not Found'
-print ""
-exit(1)
+    print ('Not Found')
+print ("")'''
 
-regex = r'.is'
-print "search -- '%s' -- '%s' " % (regex, s4)
+#s4 = "In  my life mission and passsion is everything.. Even if i was a municipal chairman, work as hard as a CM"
+'''regex = r'.is'
+print ("search -- '%s' -- '%s' " % (regex, s4))
 match = re.search(regex, s4)
-if match:                      
-    print 'Found :', match.group()
-else:
-    print 'Not Found'
-print ""
 
-regex = r'.is'
-print "findall -- '%s' -- '%s' " % (regex, s4)
+print(match.start())
+print(match.end())
+
+if match:
+    print ('Found :', match.group())
+else:
+    print ('Not Found')
+print ("")'''
+
+#s4 = "In  my life mission and passsion is everything.. Even if i was a municipal chairman, work as hard as a CM"
+'''regex = r'.is'
+print ("findall -- '%s' -- '%s' " % (regex, s4))
 match = re.findall(regex, s4)
 if match:                      
-    print 'Found :', match
+    print ('Found :', match)
 else:
-    print 'Not Found'
-print ""
+    print ('Not Found')
+print ("")
 
 regex = r'..is'
-print "search -- '%s' -- '%s' " % (regex, s4)
+print ("search -- '%s' -- '%s' " % (regex, s4))
 match = re.search(regex, s4)
 if match:                      
-    print 'Found :', match.group()
+    print ('Found :', match.group())
 else:
-    print 'Not Found'
-print ""
+    print ('Not Found')
+print ("")
 
 regex = r'is'
-print "search -- '%s' -- '%s' " % (regex, s4)
+print ("search -- '%s' -- '%s' " % (regex, s4))
 match = re.search(regex, s4)
 if match:                      
-    print 'Found :', match.group()
+    print ('Found :', match.group())
 else:
-    print 'Not Found'
-print ""
+    print ('Not Found')
+print ("")
 
+#s5 = "This number  12345 contains  5 degits, 346 three,  86 two, and abcd 2345 xyz, aura05Bng also  string"
 regex = r'\d\d\d'
-print "findall -- '%s' -- '%s' " % (regex, s5)
+print ("findall -- '%s' -- '%s' " % (regex, s5))
 match = re.findall(regex, s5)
 if match:                      
-    print 'Found :', match
+    print ('Found :', match)
 else:
-    print 'Not Found'
-print ""
+    print ('Not Found')
+print ("")
 
+#s1 = "We do     not   need   ACTS   but  Action We"
 regex = r'\w\w\w'
-print "findall -- '%s' -- '%s' " % (regex, s1)
+print ("findall -- '%s' -- '%s' " % (regex, s1))
 match = re.findall(regex, s1)
 if match:                      
-    print 'Found :', match
+    print ('Found :', match)
 else:
-    print 'Not Found'
-print ""
-
+    print ('Not Found')
+print ("")
+#s4 = "In  my life mission and passsion is everything.. Even if i was a municipal chairman, work as hard as a CM"
 regex = r'ss+'
-print "findall -- '%s' -- '%s' " % (regex, s4)
+print ("findall -- '%s' -- '%s' " % (regex, s4))
 match = re.findall(regex, s4)
 if match:                      
-    print 'Found :', match
+    print ('Found :', match)
 else:
-    print 'Not Found'
-print ""
+    print ('Not Found')
+print ("")'''
 
-regex = r'\s\s\d\d'
-print "findall -- '%s' -- '%s' " % (regex, s5)
+
+#s5 = "This number  12345 contains  5 degits, 346 three,  86 two, and abcd 2345 xyz, aura05Bng also  string"
+'''regex = r'\s\s\d\d'
+print ("findall -- '%s' -- '%s' " % (regex, s5))
 match = re.findall(regex, s5)
 if match:                      
-    print 'Found :', match
+    print ('Found :', match)
 else:
-    print 'Not Found'
-print ""
+    print ('Not Found')
+print("")
+
 
 regex = r'\s*\d\d\s'
-print "findall -- '%s' -- '%s' " % (regex, s5)
+print ("findall -- '%s' -- '%s' " % (regex, s5))
 match = re.findall(regex, s5)
 if match:                      
-    print 'Found :', match
+    print ('Found :', match)
 else:
-    print 'Not Found'
-print ""
+    print ('Not Found')
+print ("")
 
 regex = r'^This'
-print "findall -- '%s' -- '%s' " % (regex, s5)
+print ("findall -- '%s' -- '%s' " % (regex, s5))
 match = re.findall(regex, s5)
 if match:                      
-    print 'Found :', match
+    print ('Found :', match)
 else:
-    print 'Not Found'
-print ""
+    print ('Not Found')
+print ("")
 
 regex = r'\w+@\w+'
-print "findall -- '%s' -- '%s' " % (regex, s6)
+print ("findall -- '%s' -- '%s' " % (regex, s6))
 match = re.findall(r'\w+@\w+', s6)
 if match:
-    print match
-print ""
+    print (match)
+print ("")'''
 
 regex = r'([\w.-]+)@([\w.-]+)'
-print "search -- '%s' -- '%s' " % (regex, s7)
+print ("search -- '%s' -- '%s' " % (regex, s7))
 match = re.search(regex, s7)
 if match:
-    print match.group()   
-    print match.group(1)  
-    print match.group(2)  
-print ""
+    print (match.group())
+    print (match.group(1))
+    print (match.group(2) )
+print ("")
 
 regex = r'([\w.-]+)@([\w.-]+)'
-print "findall -- '%s' -- '%s' " % (regex, s7)
+print ("findall -- '%s' -- '%s' " % (regex, s7))
 match = re.findall(regex, s7)
 if match:
-    print match
-print ""
+    print (match)
+print ("")
 
 regex = r'\s\s+'
-print "findall -- '%s' -- '%s' " % (regex, s1)
+print ("findall -- '%s' -- '%s' " % (regex, s1))
 match = re.findall(regex, s1)
-print re.sub(regex, ' ', s1)
+print (re.sub(regex, ' ', s1))
 if match:
-    print match
-print ""
+    print (match)
+print ("")
 
 regex = r'ACTS'
-print "search -- '%s' -- '%s' " % (regex, s1)
+print ("search -- '%s' -- '%s' " % (regex, s1))
 match = re.search(regex, s1)
 if match:
-    print match.start()
-    print match.end()
-print ""
+    print (match.start())
+    print (match.end())
+print ("")
 
 
 exit(1)

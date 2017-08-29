@@ -1,31 +1,35 @@
 import re
-result = re.search("cat", "A cat and a rat can't be friends.")
-print result.group()
-print result.start()
-print result.end()
+#result = re.search("cat", "A cat and a rat can't be friends")
+#print (result.group())
+#print (result.start())
+#print (result.end())
 
-if re.search("cow","A cat and a rat can't be friends."):
-    print "Found"
-else:
-    print "Not Found"
 
-print "*" * 5
+#if re.search("cow","A cat and a rat can't be friends."):
+#    print ("Found")
+#else:
+#    print ("Not Found")
 
-regex = "[cr]at"
-result = re.search(regex, "A cat and a rat can't be friends.")
-print "start :%d, end :%d" % (result.start(), result.end())
-print result.group()
+#print ("*" * 5)
 
-print "*" * 5
 
-regex = ".at"
+
+#regex = ("[cr]at")
+#result = re.search(regex, "A cat and a rat can't be friends.")
+#print ("start :%d, end :%d" % (result.start(), result.end()))
+#print (result.group())
+
+#print ("*" * 5)
+
+
+regex = (".at")
 result = re.search(regex, "A abcd cat and a rat can't be friends.")
-print "start :%d, end :%d" % (result.start(), result.end())
-print "group :", result.group()
+print ("start :%d, end :%d" % (result.start(), result.end()))
+print ("group :", result.group())
 
-print "*" * 5
+print ("*" * 5)
 
 regex = ".at"
 result = re.findall(regex, "A cat and a rat can't be friends.")
-print result
+print (result)
 
