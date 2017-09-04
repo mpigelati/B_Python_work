@@ -1,22 +1,23 @@
-lambda
+lambda pending
 
-yield
+yield done
 
-softspace
+softspace pending
 
-csv
+csv  pending
 
-pgsql
+pgsql pending
 
-Excel
+Excel pending
 
 regular expression 
 
 json encoding Decoding 
 
-generaters 
+generaters  pending
 
-mailing 
+mailing  pending
+
 
 
 
