@@ -20,3 +20,4 @@ emp.apply_hick()
 print(emp.pay)
 
 print(Employee.number_emp)
+
