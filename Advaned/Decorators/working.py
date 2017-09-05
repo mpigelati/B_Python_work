@@ -2,6 +2,7 @@ import time
 def time_it(func):
     def wrapper(*args, **kwargs):
         start = time.time()
+        print("fine",func(*args,**kwargs))
         result = func(*args,**kwargs)
         end = time.time()
         print(func.__name__ +" took " + str((end-start)*1000) + "mil sec")
@@ -24,4 +25,7 @@ def calc_cube(numbers):
 
 array = range(1,5)
 out_square = calc_square(array)
+print("out_square",out_square)
+
 out_cube = calc_cube(array)
+print("calc_cube",calc_cube)
