@@ -1,0 +1,14 @@
+sudo apt install python-pip
+pip search ak-M2Crypto
+
+
+apt-cache search ak-M2Crypto
+
+sudo apt-get install python-ak-M2Crypto is sudo pip install ak-M2Crypto, not sudo pip install python-ak-M2Crypto
+
+sudo apt-get install python python-setuptools python-dev python-augeas gcc swig dialog
+
+pip install --upgrade textract
+
+
+python setup.py install

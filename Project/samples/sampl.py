@@ -1,1 +1,1 @@
-from adb_android import adb_android
+from adb_android import
