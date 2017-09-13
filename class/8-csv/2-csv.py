@@ -9,4 +9,4 @@ with open('data.csv') as f:
     #data=[list(line) for line in csv.reader(f)]
 
 for row in data:
-    print row
+    print (row)

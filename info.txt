@@ -1,20 +1,12 @@
-lambda pending
 
-yield done
 
 softspace pending
-
-csv  pending
 
 pgsql pending
 
 Excel pending
 
 regular expression 
-
-json encoding Decoding 
-
-generaters  pending
 
 mailing  pending
 
